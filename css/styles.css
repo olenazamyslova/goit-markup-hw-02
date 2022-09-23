@@ -1,0 +1,196 @@
+/* main color #212121
+additional color #757575; #fff; #F5F4FA; rgba(255, 255, 255, 0.6)
+logo #000
+bg #fff; #2F303A;
+accent color #2196F3 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    font-family: 'Roboto';
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+/*  Common header */
+
+.logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: #000;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+.logo span,
+.f_logo span{
+    color: #2196F3;
+}
+.menu a{
+    font-size: 14px;
+    line-height: 16px;
+    color: #212121;
+}
+.menu a:hover,
+.menu a:focus{
+    color: #2196F3;
+    transition: .5s;
+}
+.contacts a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #757575;
+}
+.contacts a:hover,
+.contacts a:focus{
+    color: #2196F3;
+    transition: .5s;
+}
+
+/* Portfolio body */
+
+.buttons button{
+    color: #212121;
+    background-color: #F5F4FA;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+}
+.buttons button:hover,
+.buttons button:focus{
+    color: #fff;
+    background-color: #2196F3;
+    transition: .5s;
+}
+.cards h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: #212121;
+}
+.cards p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* Common footer */
+
+footer{
+    background-color: #2F303A;
+}
+.f_contacts a{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+.address a{
+    font-size: 14px;
+    line-height: 24px; 
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+}
+.f_logo{
+    font-family: 'Raleway';
+    font-weight: 700;
+    color: #fff;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+}
+.f_contacts a:hover, 
+.f_contacts a:focus{
+    color: #2196F3;
+    transition: .5s;
+}
+
+/* Studio offer */
+
+.offer{
+    color: #fff;
+    background-color: #2F303A;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.offer button{
+    color: #fff;
+    background-color: #2196F3;
+    border: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    padding: 6px 22px;
+}
+
+/* Advantages */
+.advantages h2{
+    display: none;
+}
+h3{
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+}
+.advantages p{
+   font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #757575; 
+}
+
+/*  Work */
+
+h2{
+    font-size: 36px;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+/* Our team */
+.team{
+    background-color: #F5F4FA;
+}
+.team ul{
+    background-color: #fff;
+}
+.team h3{
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #212121;
+    text-align: center;
+}
+.team p{
+  font-size: 16px;
+line-height: 19px;
+letter-spacing: 0.03em;
+color: #757575;  
+text-align: center;
+}
+
