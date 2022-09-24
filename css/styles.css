@@ -3,211 +3,220 @@ additional color #757575; #fff; #F5F4FA; rgba(255, 255, 255, 0.6)
 logo #000
 bg #fff; #2F303A;
 accent color #2196F3 */
+
+:root{
+    --main-color: #212121;
+    --add-color-1: #757575;
+    --add-color-2: #fff;
+    --add-color-3: #F5F4FA;
+    --add-color-4: rgba(255, 255, 255, 0.6);
+    --logo-color: #000;
+    --main-bg-color: #fff;
+    --add-bg-color: #2F303A;
+    --accent-color: #2196F3;
+}
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 
-
-ul{
+.list{
     list-style: none;
 }
-a{
+.link{
     text-decoration: none;
 }
-button{
-    cursor: pointer;
-}
 body{
-    font-family: 'Roboto';
-    font-weight: 500;
-    letter-spacing: 0.02em;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*  Common header */
 
 .logo{
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    color: #000;
+    color: var(--logo-color);
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
 }
-.logo span,
-.f_logo span{
-    color: #2196F3;
+.logo_span{
+    color: var(--accent-color);
 }
-.menu a{
+.menu_link{
+    color: var(--main-color);
     font-size: 14px;
-    line-height: 16px;
-    color: #212121;
+    line-height: 1.14;
     font-weight: 500;
 }
-.menu a:hover,
-.menu a:focus{
-    color: #2196F3;
-    transition: .5s;
+.menu_link:hover,
+.menu_link:focus{
+    color: var(--accent-color);
 }
-.contacts a{
-    font-weight: 500;
+.contacts_link{
+    color: var(--add-color-1);
     font-size: 14px;
-    line-height: 16px;
-    color: #757575;
+    line-height: 1.14;
     font-weight: 500;
 }
-.contacts a:hover,
-.contacts a:focus{
-    color: #2196F3;
-    transition: .5s;
+.contacts_link:hover,
+.contacts_link:focus{
+    color: var(--accent-color);
 }
 
 /* Portfolio body */
 
-.buttons button{
-    color: #212121;
-    background-color: #F5F4FA;
+.buttons_btn{
+    color: var(--main-color);
+    background-color: var(--add-color-3);
     border: none;
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     text-align: center;
     letter-spacing: 0.03em;
     padding: 6px 22px;
+    cursor: pointer;
 }
-.buttons button:hover,
-.buttons button:focus{
-    color: #fff;
-    background-color: #2196F3;
-    transition: .5s;
+.buttons_btn:hover,
+.buttons_btn:focus{
+    color: var(--add-color-2);
+    background-color: var(--accent-color);
 }
-.cards h3{
-    font-family: 'Roboto';
-    font-style: normal;
+.cards_title{
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 2;
     letter-spacing: 0.06em;
-    color: #212121;
+    color: var(--main-color);
     font-weight: 700;
 }
-.cards p{
-    font-weight: 400;
+.cards_text{
     font-size: 16px;
-    line-height: 30px;
+    line-height: 1.88;
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--add-color-1);
     font-weight: 400;
 }
 
 /* Common footer */
 
 footer{
-    background-color: #2F303A;
-    font-weight: 400;
-}
-.f_contacts a{
-    font-style: normal;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-}
-.address a{
-    font-size: 14px;
-    line-height: 24px; 
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
+    background-color: var(--add-bg-color);
     font-weight: 400;
 }
 .f_logo{
-    font-family: 'Raleway';
+    font-family: 'Raleway',
+    sans-serif;
     font-weight: 700;
-    color: #fff;
+    color: var(--add-color-2);
     font-size: 26px;
-    line-height: 31px;
+    line-height: 1.19;
     letter-spacing: 0.03em;
 }
-.f_contacts a:hover, 
-.f_contacts a:focus{
-    color: #2196F3;
-    transition: .5s;
+address{
+    font-style: normal;
+}
+.address_contacts{
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--add-color-4)
+}
+.address_contacts_adr{
+    font-size: 14px;
+    line-height: 1.71; 
+    letter-spacing: 0.03em;
+    color: var(--add-color-2);
+}
+.address_contacts:hover, 
+.address_contacts:focus{
+    color: var(--accent-color);
 }
 
 /* Studio offer */
 
-.offer{
-    color: #fff;
-    background-color: #2F303A;
+.hero{
+   background-color: var(--add-bg-color); 
+}
+.hero_title{
+    color: var(--add-color-2);
+    
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
-    text-transform: uppercase;
     font-weight: 900;
 }
-.offer button{
-    color: #fff;
-    background-color: #2196F3;
+
+.hero_btn{
+    color: var(--add-color-2);
+    background-color: var(--accent-color);
     border: none;
     font-family: 'Roboto';
     font-size: 16px;
-    line-height: 26px;
+    line-height: 1.63;
     letter-spacing: 0.03em;
     padding: 6px 22px;
     font-weight: 700;
+    cursor: pointer;
 }
 
 /* Advantages */
-.advantages h2{
+.advantages_header{
     display: none;
 }
-h3{
+.advantages_title{
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #212121;
+    color: var(--main-color);
     font-weight: 700;
 }
-.advantages p{
+.advantages_text{
    font-size: 14px;
-line-height: 24px;
-letter-spacing: 0.03em;
-color: #757575; 
-font-weight: 400;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: var(--add-color-1); 
+    font-weight: 400;
 }
 
 /*  Work */
 
-h2{
+.work_title{
     font-size: 36px;
-    line-height: 42px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--main-color);
     font-weight: 700;
 }
 /* Our team */
 .team{
-    background-color: #F5F4FA;
+    background-color: var(--add-color-3);
 }
-.team ul{
-    background-color: #fff;
-}
-.team h3{
-    font-size: 16px;
-    line-height: 19px;
+.team_header{
+    font-size: 36px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
-    color: #212121;
+    color: var(--main-color);
+    font-weight: 700;
+}
+.team_cards{
+    background-color: var(--add-color-2);
+}
+.team_cards_title{
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
     text-align: center;
     font-weight: 500;
 }
-.team p{
+.team_cards_text{
   font-size: 16px;
-line-height: 19px;
+line-height: 1.19;
 letter-spacing: 0.03em;
-color: #757575;  
+color: var(--add-color-1);  
 text-align: center;
-font-weight: 400;
 }
 
