@@ -89,7 +89,6 @@ body{
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-color);
-    font-weight: 700;
 }
 .cards_text{
     font-size: 16px;
